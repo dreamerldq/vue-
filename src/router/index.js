@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Counter from '@/router/Counter/index.vue'
 import Introduce from '@/router/Introduce/index.vue'
 import Todo from '@/router/Todo/index.vue'
+import Table from '@/router/Table/index.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -21,6 +22,11 @@ export default new Router({
       path: '/todo',
       name: 'Todo',
       component: Todo
+    },
+    {
+      path: '/table',
+      name: 'Table',
+      component: Table
     }
 
   ]

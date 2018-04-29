@@ -11,6 +11,7 @@
   <el-menu-item index="/">监理费计算器</el-menu-item>
   <el-menu-item index="/introduce" >数字艺术系信息列表</el-menu-item>
   <el-menu-item index="/todo">待办项目管理</el-menu-item>
+  <el-menu-item index="/table">Excel导出</el-menu-item>
 
 </el-menu>
 </template>
