@@ -12,18 +12,6 @@
     <list :items="studios" type="studioName"></list>
     <list :items="project" type="projectName"></list>
     <list :items="teachers" type="name"></list>
-    <!-- <ul>
-      <li v-for="item in news" :key="item.id">{{item.title}}</li>
-    </ul>
-        <ul>
-      <li v-for="item in studios" :key="item.id">{{item.studioName}}</li>
-    </ul>
-        <ul>
-      <li v-for="item in project" :key="item.id">{{item.projectName}}</li>
-    </ul>
-        <ul>
-      <li v-for="item in teachers" :key="item.id">{{item.name}}</li>
-    </ul> -->
 </div>
 
 </template>
