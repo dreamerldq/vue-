@@ -6,13 +6,14 @@
   @select="handleSelect"
   background-color="#545c64"
   text-color="#fff"
-  router=true
+  :router=true
   active-text-color="#ffd04b">
   <el-menu-item index="/">监理费计算器</el-menu-item>
   <el-menu-item index="/introduce" >数字艺术系信息列表</el-menu-item>
   <el-menu-item index="/todo">待办项目管理</el-menu-item>
   <el-menu-item index="/table">Excel导出</el-menu-item>
-
+  <el-menu-item index="/user">用户列表</el-menu-item>
+  <el-menu-item index="/jishuqi">计数器</el-menu-item>
 </el-menu>
 </template>
 

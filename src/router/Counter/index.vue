@@ -1,14 +1,12 @@
 <template>
-  <div>
-    <h1>这是主界面</h1>
-    <p>监理费计算器</p>
+  <div class="container">
     <el-input v-model="touzi" placeholder="请输入内容"></el-input>
     <RadioGroup chineseName="专业调整系数" name="zhuanye" :items="calValue.zhuanye"></RadioGroup>
     <RadioGroup  chineseName="工程调整系数" name="gongcheng" :items="calValue.gongcheng"></RadioGroup>
     <RadioGroup  chineseName="高程调整系数" name="gaocheng" :items="calValue.gaocheng"></RadioGroup>
      <el-slider v-model="fudong">浮动</el-slider>
      <el-button @click="calculator">计算</el-button>
-     <h2>监理费{{jianlifei}}</h2>
+     <h2 class="text">监理费{{jianlifei}}</h2>
   </div>
 </template>
 <script>
@@ -69,6 +67,12 @@ export default {
   }
 }
 </script>
-<style>
-
+<style lang="scss">
+  .container{
+    width: 800px;
+    margin: 0 auto;
+    .text{
+      color: red
+    }
+  }
 </style>

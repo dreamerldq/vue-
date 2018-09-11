@@ -12,6 +12,7 @@
     <list :items="studios" type="studioName"></list>
     <list :items="project" type="projectName"></list>
     <list :items="teachers" type="name"></list>
+     <router-view></router-view>
 </div>
 
 </template>
