@@ -10,7 +10,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import moduleA from './module/moduleA'
 import moduleB from './module/moduleB'
 import moduleTodo from './module/moduleTodo'
-// import counter from './module/counter'
+import counter from './module/counter'
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
 Vuex.Store.prototype.$http = axios
@@ -24,8 +24,8 @@ const store = new Vuex.Store({
   modules: {
     introduce: moduleB,
     calculator: moduleA,
-    todo: moduleTodo
-    // counter: counter
+    todo: moduleTodo,
+    counter: counter
 
   }
 

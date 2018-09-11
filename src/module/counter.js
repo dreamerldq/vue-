@@ -9,11 +9,26 @@ const counter = {
     add (state) {
       state.count++
     },
-    subCounte (state) {
+    sub (state) {
       state.count--
     }
   },
   actions: {
+    async asyncAdd ({commit}) {
+      await promise1().then(() => {
+        commit('add')
+      })
+      await promise1().then(() => {
+        commit('add')
+      })
+    }
   }
 }
+const promise1 = () => (
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve()
+    }, 1000)
+  })
+)
 export default counter
